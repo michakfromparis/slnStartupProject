@@ -39,6 +39,7 @@ namespace slnStartupProject
 
         private static void Usage(string message)
         {
+            Console.WriteLine("");
             Console.WriteLine("Error: " + message);
             Console.WriteLine("");
             Console.WriteLine("Usage: slnStartupProject slnFilename projectName");
