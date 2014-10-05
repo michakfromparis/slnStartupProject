@@ -29,7 +29,7 @@ namespace slnStartupProject
                 projectName = args[1];
 
                 if (!File.Exists(slnFilename))
-                    throw new Exception(string.Format("\"{0}\" does not exists"));
+                    throw new Exception(string.Format("\"{0}\" does not exists", slnFilename));
             }
             catch (Exception ex)
             {
