@@ -58,10 +58,11 @@ namespace slnStartupProject
             int projectsStartOffset = -1;
             int projectsEndOffset   = -1;
             List<Project> projects  = new List<Project>();
+            Encoding fileEncoding = new UTF8Encoding(false); // No Byte Order Mark (BOM)
 
             try
             {
-                text = File.ReadAllText(slnFilename, Encoding.UTF8);
+                text = File.ReadAllText(slnFilename, fileEncoding);
             }
             catch (Exception ex)
             {
@@ -98,7 +99,7 @@ namespace slnStartupProject
                 foreach (Project project in projects)
                     newSln += project.CDATA + Environment.NewLine;
                 newSln += text.Substring(projectsEndOffset, text.Length - projectsEndOffset);
-                File.WriteAllText(slnFilename, newSln, Encoding.UTF8);
+                File.WriteAllText(slnFilename, newSln, fileEncoding);
             }
             catch (Exception ex)
             {
