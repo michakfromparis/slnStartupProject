@@ -1,12 +1,13 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slnStartupProjectLibrary", "vs2013\slnStartupProjectLibrary\slnStartupProjectLibrary.csproj", "{A01E2F2D-CCD1-46B4-82D7-EB4C7A503004}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slnStartupProject", "vs2013\slnStartupProject\slnStartupProject.csproj", "{4DB074A8-D175-41C7-BAAF-00F2F73C970E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slnStartupProjectLibrary", "vs2013\slnStartupProjectLibrary\slnStartupProjectLibrary.csproj", "{A01E2F2D-CCD1-46B4-82D7-EB4C7A503004}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

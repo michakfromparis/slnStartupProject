@@ -58,12 +58,6 @@
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\slnStartupProjectLibrary\slnStartupProjectLibrary.csproj">
-      <Project>{CF03685F-40B2-4A8F-B814-538C34612480}</Project>
-      <Name>slnStartupProjectLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

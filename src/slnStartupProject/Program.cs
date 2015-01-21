@@ -16,7 +16,9 @@ namespace slnStartupProject
         static void Main(string[] args)
         {
             ParseArguments(args);
+            Console.WriteLine("Setting default Startup Project to {0} in {1}", projectName, slnFilename);
             Parser.SetStartupProject(slnFilename, projectName);
+            Console.WriteLine("{0} updated successfully", slnFilename);
         }
 
         private static void ParseArguments(string[] args)

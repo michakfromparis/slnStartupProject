@@ -51,18 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\src\slnStartupProjectLibrary\Parser.cs">
+      <Link>Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\src\slnStartupProjectLibrary\Project.cs">
+      <Link>Project.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\src\slnStartupProject\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
     <Compile Include="..\..\..\src\slnStartupProject\Properties\AssemblyInfo.cs">
       <Link>AssemblyInfo.cs</Link>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\slnStartupProjectLibrary\slnStartupProjectLibrary.csproj">
-      <Project>{A01E2F2D-CCD1-46B4-82D7-EB4C7A503004}</Project>
-      <Name>slnStartupProjectLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
