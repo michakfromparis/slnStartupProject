@@ -1,7 +1,8 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slnStartupProject", "vs2008\slnStartupProject.csproj", "{4DB074A8-D175-41C7-BAAF-00F2F73C970E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slnStartupProjectLibrary", "vs2008\slnStartupProjectLibrary\slnStartupProjectLibrary.csproj", "{CF03685F-40B2-4A8F-B814-538C34612480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slnStartupProject", "vs2008\slnStartupProject\slnStartupProject.csproj", "{7DC28A5B-F651-44EB-B089-CE84AB774FEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +10,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4DB074A8-D175-41C7-BAAF-00F2F73C970E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DB074A8-D175-41C7-BAAF-00F2F73C970E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DB074A8-D175-41C7-BAAF-00F2F73C970E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DB074A8-D175-41C7-BAAF-00F2F73C970E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF03685F-40B2-4A8F-B814-538C34612480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF03685F-40B2-4A8F-B814-538C34612480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF03685F-40B2-4A8F-B814-538C34612480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF03685F-40B2-4A8F-B814-538C34612480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC28A5B-F651-44EB-B089-CE84AB774FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC28A5B-F651-44EB-B089-CE84AB774FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC28A5B-F651-44EB-B089-CE84AB774FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC28A5B-F651-44EB-B089-CE84AB774FEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
