@@ -17,7 +17,15 @@ namespace slnStartupProject
         {
             ParseArguments(args);
             Console.WriteLine("Setting default Startup Project to {0} in {1}", projectName, slnFilename);
-            Parser.SetStartupProject(slnFilename, projectName);
+            try
+            {
+                Parser.SetStartupProject(slnFilename, projectName);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: {0}", ex.Message);
+                System.Environment.Exit(-1);
+            }
             Console.WriteLine("{0} updated successfully", slnFilename);
         }
 

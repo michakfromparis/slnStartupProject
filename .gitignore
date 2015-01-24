@@ -1,0 +1,11 @@
+*.vshost.exe
+*.vshost.exe.manifest
+*.pdb
+*.nupkg
+*.user
+*.suo
+projects/packages/*
+projects/vs2008/slnStartupProject/obj/
+projects/vs2008/slnStartupProjectLibrary/obj/
+projects/vs2013/slnStartupProject/obj/
+projects/vs2013/slnStartupProjectLibrary/obj/

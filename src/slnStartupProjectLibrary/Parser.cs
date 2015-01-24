@@ -23,8 +23,7 @@ namespace slnStartupProjectLibrary
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: Failed to read sln: " + ex.Message);
-                Environment.Exit(-1);
+                throw new Exception("Failed to read sln: " + ex.Message);
             }
             try
             {
@@ -47,8 +46,7 @@ namespace slnStartupProjectLibrary
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: Failed to parse sln: " + ex.Message);
-                Environment.Exit(-1);
+                throw new Exception("Failed to parse sln: " + ex.Message);
             }
             try
             {
@@ -60,8 +58,7 @@ namespace slnStartupProjectLibrary
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: Failed to write sln: " + ex.Message);
-                Environment.Exit(-1);
+                throw new Exception("Failed to write sln: " + ex.Message);
             }
         }
     }
