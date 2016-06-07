@@ -19,7 +19,7 @@ slnStartupProject slnFilename projectName
 
 ![Visual Studio Set as StartUp Project](/www/screenshot.png?raw=true "Never do that again!")
 
-When Visual Studio opens a sln file for the first time, it sets the very first project as the startup project and then stores it in the associated .suo file. This often make the first build fail and forces the developer to locate the project, right-click on it and select "Set as StartUp Project" for the build to succeed and launch. It is pretty annoying for maniacs like me. This becomes extremely relevant when you generate your solution using cmake as [cmake](http://www.cmake.org/) always sets the dummy project ALL_BUILD as the first project.
+When Visual Studio opens a sln file for the first time, it sets the very first project as the startup project and then stores it in the associated .suo file. This often make the first build fail and forces the developer to locate the project, right-click on it and select "Set as StartUp Project" for the build to succeed and launch. It is pretty annoying for maniacs like me. This becomes extremely relevant when you generate your solution using cmake as [cmake](http://www.cmake.org/) 3.5 and older always sets the dummy project ALL_BUILD as the first project. In CMake 3.6 and newer, there is now a [VS_STARTUP_PROJECT](https://cmake.org/cmake/help/v3.6/prop_dir/VS_STARTUP_PROJECT.html) property that allows the CMake author to specify the default startup project.
 
 You can now integrate slnStartupProject in your build script and make sure the projects you generate will build and launch everytime a developer hits **F5**
 
