@@ -24,3 +24,6 @@ projects/vs2013/slnStartupProjectLibrary/obj/
 /projects/vs2017/slnStartupProjectLibrary/obj
 /projects/vs2017/slnStartupProject/obj
 /projects/vs2017/slnStartupProject/Properties
+/tests/data/ExampleProject/ExampleProjectTemp.sln
+/projects/vs2017/slnStartupProjectUnitTest/obj
+/projects/vs2017/slnStartupProjectUnitTest/bin
