@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>michaK</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.githubusercontent.com/michaKFromParis/slnStartupProject/master/LICENCE</licenseUrl>
+    <projectUrl>https://github.com/michaKFromParis/slnStartupProject</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/michaKFromParis/slnStartupProject/master/nuget/slnStartupProject.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial nuget release</releaseNotes>
+    <copyright>Copyright michaK 2015</copyright>
+    <tags>Visual Studio sln Solution Startup Project cmake C++ C# .NET</tags>
+  </metadata>
+</package>

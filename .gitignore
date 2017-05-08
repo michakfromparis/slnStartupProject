@@ -19,3 +19,8 @@ projects/vs2013/slnStartupProjectLibrary/obj/
 /tests/data/ExampleProject/ExampleProject/Debug
 /tests/data/ExampleProject/ExampleProject/Release
 /tests/data/ExampleProject/.vs
+/projects/vs2017/slnStartupProjectLibrary/Properties
+/projects/vs2017/slnStartupProjectLibrary/bin
+/projects/vs2017/slnStartupProjectLibrary/obj
+/projects/vs2017/slnStartupProject/obj
+/projects/vs2017/slnStartupProject/Properties
