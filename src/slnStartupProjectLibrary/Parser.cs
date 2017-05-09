@@ -15,7 +15,19 @@ namespace slnStartupProjectLibrary
             int projectsStartOffset = -1;
             int projectsEndOffset = -1;
             List<Project> projects = new List<Project>();
-            Encoding fileEncoding = new UTF8Encoding(false); // No Byte Order Mark (BOM)
+
+            /* check if the solution file has BOM */
+            bool hasBOM = false;
+            using(FileStream fs = new FileStream(slnFilename, FileMode.Open))
+            {
+                byte[] bits = new byte[3];
+                fs.Read(bits, 0, 3);
+                if (bits[0] == 0xEF && bits[1] == 0xBB && bits[2] == 0xBF)
+                {
+                    hasBOM = true;
+                }
+            }
+            Encoding fileEncoding = new UTF8Encoding(hasBOM);
 
             try
             {
