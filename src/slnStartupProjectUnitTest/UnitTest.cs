@@ -42,6 +42,10 @@ namespace slnStartupUnitTest
             var processedSolution = Path.Combine(testSolutionDirectory, "ExampleProjectProcessed.sln");
             var tempSolution = Path.Combine(testSolutionDirectory, "ExampleProjectTemp.sln");
 
+            if (File.Exists(tempSolution))
+            {
+                File.Delete(tempSolution);
+            }
             File.Copy(baseSolution, tempSolution);
             Parser.SetStartupProject(tempSolution, "ExampleProject");
 
