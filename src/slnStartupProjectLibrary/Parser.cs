@@ -51,8 +51,12 @@ namespace slnStartupProjectLibrary
             try
             {
                 string newSln = text.Substring(0, projectsStartOffset);
+                List<string> projectString = new List<string>();
                 foreach (Project project in projects)
-                    newSln += project.CDATA + Environment.NewLine;
+                {
+                    projectString.Add(project.CDATA);
+                }
+                newSln += string.Join(Environment.NewLine, projectString.ToArray());
                 newSln += text.Substring(projectsEndOffset, text.Length - projectsEndOffset);
                 File.WriteAllText(slnFilename, newSln, fileEncoding);
             }
