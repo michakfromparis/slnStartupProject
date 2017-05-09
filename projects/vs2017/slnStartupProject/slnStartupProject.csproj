@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\src\slnStartupProjectLibrary\Parser.cs">
+      <Link>Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\src\slnStartupProjectLibrary\Project.cs">
+      <Link>Project.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\src\slnStartupProject\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
@@ -60,12 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\slnStartupProjectLibrary\slnStartupProjectLibrary.csproj">
-      <Project>{412d2b0e-7c81-424c-ade0-4e7f7d6da45e}</Project>
-      <Name>slnStartupProjectLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
