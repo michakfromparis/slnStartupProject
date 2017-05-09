@@ -27,7 +27,7 @@ namespace slnStartupProjectLibrary
             }
             try
             {
-                Regex projectRegex = new Regex(@"(Project\(.*?EndProject)", RegexOptions.Singleline);
+                Regex projectRegex = new Regex(@"(\bProject\b\(.*?\bEndProject\b)", RegexOptions.Singleline);
                 MatchCollection projectMatches = projectRegex.Matches(text);
                 if (projectMatches.Count == 0)
                     throw new Exception("Could not find any projects in the solution");
