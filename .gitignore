@@ -9,3 +9,5 @@ projects/vs2008/slnStartupProject/obj/
 projects/vs2008/slnStartupProjectLibrary/obj/
 projects/vs2013/slnStartupProject/obj/
 projects/vs2013/slnStartupProjectLibrary/obj/
+/tests/data/ExampleProject/.vs
+*.db
